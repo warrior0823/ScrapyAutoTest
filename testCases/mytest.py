@@ -7,11 +7,11 @@ from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
-driver.get("http://www.ezjzy.com/webpage/business/website/member/login.jsp")
+driver.get("")
 sleep(2)
-driver.find_element_by_id("loginName").send_keys("938")
+driver.find_element_by_id("loginName").send_keys("")
 sleep(2)
-driver.find_element_by_id("loginPwd").send_keys("111111")
+driver.find_element_by_id("loginPwd").send_keys("11")
 driver.find_element_by_id("ptLogin").click()
 sleep(3)
 alert_window = EC.alert_is_present()(driver)

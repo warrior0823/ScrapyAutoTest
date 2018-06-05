@@ -1,0 +1,7 @@
+1528099076033	geckodriver	INFO	Listening on 127.0.0.1:61516
+1528099079186	mozprofile::profile	INFO	Using profile path C:\Users\DELL\AppData\Local\Temp\rust_mozprofile.UtpC5QZNGba2
+1528099079194	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1528099079359	geckodriver::marionette	INFO	Connecting to Marionette on localhost:61524
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1528099084178	Marionette	INFO	Listening on port 61524
+JavaScript warning: http://libs.baidu.com/jquery/2.0.0/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead

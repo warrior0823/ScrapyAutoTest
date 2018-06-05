@@ -17,17 +17,17 @@ class test_mkls_scrapy(unittest.TestCase):
 
     def test_mkls(self):
         # 线上环境
-        # db = MySQLdb.connect(host='573ed969b9aa4.bj.cdb.myqcloud.com',
-        #                      port=5295,
-        #                      user='cdb_outermaller',
-        #                      passwd='wmqe20151118',
+        # db = MySQLdb.connect(host='',
+        #                      port=,
+        #                      user='',
+        #                      passwd='',
         #                      cursorclass=MySQLdb.cursors.DictCursor)
 
         # 测试环境
-        db = MySQLdb.connect(host='db1.dev1.yiyao.cc',
-                             port=13306,
-                             user='mall_root',
-                             passwd='20151118',
+        db = MySQLdb.connect(host='',
+                             port=1,
+                             user='',
+                             passwd='',
                              cursorclass=MySQLdb.cursors.DictCursor,
                              charset='utf8')
         cursor = db.cursor()
@@ -43,11 +43,11 @@ class test_mkls_scrapy(unittest.TestCase):
         option.add_argument('headless')
         driver = webdriver.Chrome(chrome_options=option)
         # 登陆
-        driver.get("http://www.br511.com/MenberCenter/Login.aspx")
+        driver.get("http://w/Login.aspx")
         sleep(2)
-        driver.find_element_by_id("txtLoginId").send_keys("21011085")
+        driver.find_element_by_id("txtLoginId").send_keys("5")
         sleep(2)
-        driver.find_element_by_id("txtPassword").send_keys("090907")
+        driver.find_element_by_id("txtPassword").send_keys("7")
         driver.find_element_by_id("btnLogin").click()
         sleep(2)
         driver.find_element_by_id("top1_txtKeyword").send_keys(u"双黄连口服液")

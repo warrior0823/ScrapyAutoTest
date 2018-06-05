@@ -18,17 +18,17 @@ class test_zy_scrapy(unittest.TestCase):
 
     def test_zy(self):
         # 线上环境
-        # db = MySQLdb.connect(host='573ed969b9aa4.bj.cdb.myqcloud.com',
-        #                      port=5295,
-        #                      user='cdb_outermaller',
-        #                      passwd='wmqe20151118',
+        # db = MySQLdb.connect(host='',
+        #                      port=1,
+        #                      user='',
+        #                      passwd='',
         #                      cursorclass=MySQLdb.cursors.DictCursor)
 
         # 测试环境
-        db = MySQLdb.connect(host='db1.dev1.yiyao.cc',
-                             port=13306,
-                             user='mall_root',
-                             passwd='20151118',
+        db = MySQLdb.connect(host='',
+                             port=1,
+                             user='',
+                             passwd='',
                              cursorclass=MySQLdb.cursors.DictCursor,
                              charset='utf8')
         cursor = db.cursor()
@@ -44,11 +44,11 @@ class test_zy_scrapy(unittest.TestCase):
         option.add_argument('headless')
         driver = webdriver.Chrome(chrome_options=option)
         # 登陆
-        driver.get("http://www.ezjzy.com/webpage/business/website/member/login.jsp")
+        driver.get("http:///login.jsp")
         sleep(2)
-        driver.find_element_by_id("loginName").send_keys("938")
+        driver.find_element_by_id("loginName").send_keys("")
         sleep(2)
-        driver.find_element_by_id("loginPwd").send_keys("111111")
+        driver.find_element_by_id("loginPwd").send_keys("")
         driver.find_element_by_id("ptLogin").click()
         sleep(3)
         alert_window = EC.alert_is_present()(driver)
